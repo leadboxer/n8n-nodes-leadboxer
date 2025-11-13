@@ -56,5 +56,4 @@ Enter your API key in the n8n credentials:
 ## Resources
 
 * [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
-* [LeadBoxer API Documentation](https://docs.leadboxer.com/api/)
 * [LeadBoxer Website](https://www.leadboxer.com/)
