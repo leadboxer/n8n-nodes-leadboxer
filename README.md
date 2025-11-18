@@ -28,32 +28,35 @@ After installing the node, you can use it like any other node. n8n displays the 
 
 This node supports the following operations:
 
-### Domain Lookup
-- Get organization information for a domain
-- Returns company details, address, employees, industry, technologies, and more
+###Domain Lookup
 
-### IP Address Lookup
-- Get geolocation information for an IP address
-- Returns country, city, ISP, timezone, coordinates, and usage type
+- Get enriched company information for any domain
+
+- Returns company details, location, employee range, industry classification, technologies in use, and related firmographic data
+
+###IP Address Lookup
+
+- Get company identification and detailed context for an IP address
+
+- Returns the identified company domain (when available), plus country, city, ISP, timezone, coordinates, and usage type
 
 ## Credentials
 
-To use this node, you need a LeadBoxer API key. You can obtain one by:
-
-1. Signing up at [LeadBoxer](https://www.leadboxer.com/)
-2. Going to your account settings
-3. Generating an API key
+To use this node, you need a LeadBoxer API key.You can obtain one in the LeadBoxer Developer Portal (link to Leadboxerdevelopers.leadboxer.com/docs/n8n)
 
 Enter your API key in the n8n credentials:
 - **Credential Type**: LeadBoxer API
 - **API Key**: Your LeadBoxer API key
+> [!CAUTION]  
+> The API key should be kept secure and never shared publicly
 
 ## Compatibility
 
-- Minimum n8n version: 0.200.0
+- Minimum n8n version: 1.0.0+
 - Tested with n8n version: 1.0.0+
 
 ## Resources
 
 * [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
 * [LeadBoxer Website](https://www.leadboxer.com/)
+* [Leadboxer Docs(https://developers.leadboxer.com/inactive)]

@@ -1,11 +1,17 @@
 {
 	"name": "n8n-nodes-leadboxer",
 	"version": "0.1.0",
-	"description": "LeadBoxer node for n8n",
+	"description": "n8n node for LeadBoxer API - Domain and IP lookup for lead generation",
 	"license": "MIT",
-	"homepage": "",
+	"homepage": "https://www.leadboxer.com/",
 	"keywords": [
-		"n8n-community-node-package"
+		"n8n-community-node-package",
+		"n8n",
+		"leadboxer",
+		"lead-generation",
+		"ip-lookup",
+		"domain-lookup",
+		"geolocation"
 	],
 	"author": {
 		"name": "LeadBoxer",
@@ -25,7 +31,9 @@
 		"prepublishOnly": "n8n-node prerelease"
 	},
 	"files": [
-		"dist"
+		"dist",
+		"LICENSE",
+		"README.md"
 	],
 	"n8n": {
 		"n8nNodesApiVersion": 1,
@@ -36,7 +44,6 @@
 		"nodes": [
 			"dist/nodes/leadboxer/Leadboxer.node.js"
 		]
-        
 	},
 	"devDependencies": {
 		"@n8n/node-cli": "*",
@@ -47,5 +54,8 @@
 	},
 	"peerDependencies": {
 		"n8n-workflow": "*"
-	}
+	},
+	"publishConfig": {
+    "access": "public"
+  }
 }

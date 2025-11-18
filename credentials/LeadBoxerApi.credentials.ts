@@ -8,7 +8,7 @@ import {
 export class LeadBoxerApi implements ICredentialType {
 	name = 'leadBoxerApi';
 	displayName = 'LeadBoxer API';
-	documentationUrl = 'https://docs.leadboxer.com/api/';
+	documentationUrl = 'https://developers.leadboxer.com/inactive';
 	icon = 'file:../nodes/leadboxer/leadboxer.svg' as const;
 	properties: INodeProperties[] = [
 		{

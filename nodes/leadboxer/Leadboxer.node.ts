@@ -8,13 +8,27 @@ export class Leadboxer implements INodeType {
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
-		description: 'Get data from LeadBoxer API',
+		description: 'Enrich domains and identify companies behind IPs in one step',
 		defaults: {
 			name: 'LeadBoxer',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
 		usableAsTool: true,
+		codex: {
+			alias: ['lead generation', 'ip lookup', 'domain lookup', 'company data', 'geolocation', 'lead enrichment'],
+			categories: ['Marketing & Sales'],
+			subcategories: {
+				'Marketing & Sales': ['Lead Generation'],
+			},
+			resources: {
+				primaryDocumentation: [
+					{
+						url: 'https://developers.leadboxer.com/docs/n8n/',
+					},
+				],
+			},
+		},
 		credentials: [
 			{
 				name: 'leadBoxerApi',
@@ -38,13 +52,16 @@ export class Leadboxer implements INodeType {
 					{
 						name: 'Domain',
 						value: 'domain',
+						description: 'Enrich company data from domain names',
 					},
 					{
 						name: 'IP Address',
 						value: 'ip',
+						description: 'Identify companies behind IP addresses',
 					},
 				],
 				default: 'domain',
+				description: 'Choose what to lookup: domain or IP address',
 			},
 			// Domain Operations
 			{
@@ -61,8 +78,8 @@ export class Leadboxer implements INodeType {
 					{
 						name: 'Lookup',
 						value: 'lookup',
-						action: 'Lookup domain information',
-						description: 'Get organization information for a domain',
+						action: 'Enrich domain data',
+						description: 'Get enriched company information for any domain',
 						routing: {
 							request: {
 								method: 'GET',
@@ -120,8 +137,8 @@ export class Leadboxer implements INodeType {
 					{
 						name: 'Lookup',
 						value: 'lookup',
-						action: 'Lookup IP address information',
-						description: 'Get geolocation and ISP information for an IP address',
+						action: 'Identify company from IP',
+						description: 'Get company identification and detailed context for an IP address',
 						routing: {
 							request: {
 								method: 'GET',
