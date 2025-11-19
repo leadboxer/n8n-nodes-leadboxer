@@ -28,13 +28,13 @@ After installing the node, you can use it like any other node. n8n displays the 
 
 This node supports the following operations:
 
-###Domain Lookup
+### Domain Lookup
 
 - Get enriched company information for any domain
 
 - Returns company details, location, employee range, industry classification, technologies in use, and related firmographic data
 
-###IP Address Lookup
+### IP Address Lookup
 
 - Get company identification and detailed context for an IP address
 
