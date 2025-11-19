@@ -42,7 +42,7 @@ This node supports the following operations:
 
 ## Credentials
 
-To use this node, you need a LeadBoxer API key.You can obtain one in the LeadBoxer Developer Portal (link to Leadboxerdevelopers.leadboxer.com/docs/n8n)
+To use this node, you need a LeadBoxer API key.You can obtain one in the [LeadBoxer Developer Portal](https://developers.leadboxer.com/docs/n8n)
 
 Enter your API key in the n8n credentials:
 - **Credential Type**: LeadBoxer API
